@@ -6,3 +6,13 @@
 [![Nuget](https://img.shields.io/nuget/v/DMTools)](https://www.nuget.org/packages/DMTools)
 [![codecov](https://codecov.io/gh/JDouglasMendes/DMTools/branch/master/graph/badge.svg)](https://codecov.io/gh/JDouglasMendes/DMTools)
 
+## Instalação
+*Install-Package DMTools* || *dotnet add package DMTools*
+
+## Features
+* [ ] [Reflexão](https://github.com/JDouglasMendes/DMTools/blob/master/pages/reflection.MD)
+* [ ] [String](https://github.com/JDouglasMendes/DMTools/blob/master/pages/reflection.MD)
+* [ ] [SQL](https://github.com/JDouglasMendes/DMTools/blob/master/pages/reflection.MD)
+* [ ] [Coleções](https://github.com/JDouglasMendes/DMTools/blob/master/pages/reflection.MD)
+* [ ] [Clone](https://github.com/JDouglasMendes/DMTools/blob/master/pages/reflection.MD)
+* [ ] [Data](https://github.com/JDouglasMendes/DMTools/blob/master/pages/reflection.MD)

@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMTools", "DMTools\DMTools.csproj", "{35A27B03-8114-44C0-B96C-727A1561A603}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D6B2443-5809-435B-A747-43271ED535CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{86FBA198-5B15-4950-9437-AE00D2DE2851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMTools.Test", "DMTools.Test\DMTools.Test.csproj", "{EB296C4E-5C55-4F2A-9B89-F82EB4F55444}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35A27B03-8114-44C0-B96C-727A1561A603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A27B03-8114-44C0-B96C-727A1561A603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A27B03-8114-44C0-B96C-727A1561A603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A27B03-8114-44C0-B96C-727A1561A603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB296C4E-5C55-4F2A-9B89-F82EB4F55444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB296C4E-5C55-4F2A-9B89-F82EB4F55444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB296C4E-5C55-4F2A-9B89-F82EB4F55444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB296C4E-5C55-4F2A-9B89-F82EB4F55444}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35A27B03-8114-44C0-B96C-727A1561A603} = {3D6B2443-5809-435B-A747-43271ED535CC}
+		{EB296C4E-5C55-4F2A-9B89-F82EB4F55444} = {86FBA198-5B15-4950-9437-AE00D2DE2851}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97B5CD89-D9A9-4CBA-9862-3E0D73E29342}
+	EndGlobalSection
+EndGlobal

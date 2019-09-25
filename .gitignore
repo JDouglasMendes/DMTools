@@ -1,0 +1,6 @@
+DMTools/DMTools/obj/*
+DMTools/DMTools/bin/*
+DMTools/DMTools/.vs/*
+DMTools/.vs/*
+DMTools/DMTools.Test/obj/*
+DMTools/DMTools.Test/bin/*

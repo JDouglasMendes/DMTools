@@ -49,7 +49,7 @@ Task("Create-Nuget-Package")
 .Does(() =>
 {
     var version = GetPackageVersion();
-    
+    var url = GetProjectUrl();
     foreach (var project in GetFiles("./DMTools/DMTools/*.csproj"))
     {
         Console.Write(version);
@@ -59,9 +59,8 @@ Task("Create-Nuget-Package")
             {               
                 Configuration = configuration,
                 OutputDirectory = artifactsDirectory,
-                ArgumentCustomization = args => args.Append($"/p:Version={version}")
-                                                .Append($"Authors=Douglas Aleixo Mendes")
-                                                .Append($"ProjectUrl=https://github.com/JDouglasMendes/DMTools")
+                ArgumentCustomization = args => args.Append($"/p:Version={version}")                                               
+                                                .Append($"ProjectUrl={url}")
             });
     }
 });
@@ -96,4 +95,9 @@ private string GetPackageVersion()
 
     Information($"Git Semantic Version: {JsonConvert.SerializeObject(gitVersion)}");
     return gitVersion.NuGetVersionV2;
+}
+
+private string GetProjectUrl()
+{
+    return "https://github.com/JDouglasMendes/DMTools"
 }

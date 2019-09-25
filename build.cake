@@ -51,8 +51,7 @@ Task("Create-Nuget-Package")
     var version = GetPackageVersion();
     var url = GetProjectUrl();
     foreach (var project in GetFiles("./DMTools/DMTools/*.csproj"))
-    {
-        Console.Write(version);
+    {      
         DotNetCorePack(
             project.GetDirectory().FullPath,
             new DotNetCorePackSettings()
@@ -60,7 +59,7 @@ Task("Create-Nuget-Package")
                 Configuration = configuration,
                 OutputDirectory = artifactsDirectory,
                 ArgumentCustomization = args => args.Append($"/p:Version={version}")                                               
-                                                .Append($"/p:ProjectUrl={url}")
+                                                .Append($"ProjectUrl={url}")
             });
     }
 });

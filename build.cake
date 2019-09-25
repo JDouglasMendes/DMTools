@@ -115,5 +115,5 @@ private string Description()
 
 private string Author()
 {
-    return "Douglas Aleixo Mendes";
+    return "JDouglasMendes";
 }

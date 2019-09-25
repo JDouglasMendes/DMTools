@@ -4,3 +4,5 @@
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/JDouglasMendes/DMTools)
 [![GitHub](https://img.shields.io/github/license/JDouglasMendes/DMTools)](https://github.com/JDouglasMendes/DMTools/blob/master/LICENSE)
 [![Nuget](https://img.shields.io/nuget/v/DMTools)](https://www.nuget.org/packages/DMTools)
+[![codecov](https://codecov.io/gh/JDouglasMendes/DMTools/branch/master/graph/badge.svg)](https://codecov.io/gh/JDouglasMendes/DMTools)
+

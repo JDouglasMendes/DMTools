@@ -60,6 +60,8 @@ Task("Create-Nuget-Package")
                 Configuration = configuration,
                 OutputDirectory = artifactsDirectory,
                 ArgumentCustomization = args => args.Append($"/p:Version={version}")
+                                                .Append($"/p:Authors=Douglas Aleixo Mendes")
+                                                .Append($"/p:ProjectUrl=https://github.com/JDouglasMendes/DMTools")
             });
     }
 });

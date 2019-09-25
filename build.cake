@@ -59,7 +59,8 @@ Task("Create-Nuget-Package")
                 Configuration = configuration,
                 OutputDirectory = artifactsDirectory,
                 ArgumentCustomization = args => args.Append($"/p:Version={version}")                                               
-                                                .Append($"ProjectUrl={url}")
+                                                .Append($"/p:ProjectUrl={url}")
+                                                 .Append($"/p:Description={url}")
             });
     }
 });
@@ -99,4 +100,9 @@ private string GetPackageVersion()
 private string GetProjectUrl()
 {
     return "https://github.com/JDouglasMendes/DMTools";
+}
+
+private string Description()
+{
+    return "General tools for developers";
 }

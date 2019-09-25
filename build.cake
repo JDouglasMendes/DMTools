@@ -52,7 +52,7 @@ Task("Create-Nuget-Package")
     var url = GetProjectUrl();
     var author = Author();
     var description = Description();
-
+    
     foreach (var project in GetFiles("./DMTools/DMTools/*.csproj"))
     {      
         DotNetCorePack(
@@ -63,6 +63,10 @@ Task("Create-Nuget-Package")
                 OutputDirectory = artifactsDirectory,
                 ArgumentCustomization = args => args.Append($"/p:Version={version}")                                               
                                                     .Append($"/p:ProjectUrl={url}")                                                    
+                                                    .Append($"/p:Authors={author}")
+                                                    .Append($"/p:LicenseUrl={url}")
+                                                    .Append($"/p:IconUrl={url}")
+                                                    .Append($"/p:Copyright={author}")
             });
     }
 });

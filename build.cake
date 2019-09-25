@@ -62,8 +62,7 @@ Task("Create-Nuget-Package")
                 Configuration = configuration,
                 OutputDirectory = artifactsDirectory,
                 ArgumentCustomization = args => args.Append($"/p:Version={version}")                                               
-                                                    .Append($"/p:ProjectUrl={url}")
-                                                    .Append($"/p:Description={description}")                                         
+                                                    .Append($"/p:ProjectUrl={url}")                                                    
             });
     }
 });

@@ -46,7 +46,6 @@ Task("Test")
 
 Task("Create-Nuget-Package")
 .IsDependentOn("Test")
-.WithCriteria(ShouldRunRelease())
 .Does(() =>
 {
     var version = GetPackageVersion();
@@ -75,7 +74,6 @@ Task("Create-Nuget-Package")
 
 Task("Push-Nuget-Package")
 .IsDependentOn("Create-Nuget-Package")
-.WithCriteria(ShouldRunRelease())
 .Does(() =>
 {
     var apiKey = EnvironmentVariable("NUGET_API_KEY");

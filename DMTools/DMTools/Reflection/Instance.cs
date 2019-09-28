@@ -6,14 +6,14 @@ using System.Text;
 
 namespace DMTools.Reflection
 {
-    public class Instance
+    public static class Instance
     {
-        public T Create<T>()
+        public static T Create<T>()
         {
             return Activator.CreateInstance<T>();
         }
 
-        public TReturn Create<TReturn, TEntity>(TEntity entity ,params Func<TEntity, object>[] expressions)
+        public static TReturn Create<TReturn, TEntity>(TEntity entity ,params Func<TEntity, object>[] expressions)
         {
             var param = new object[expressions.Length];
             var count = 0;
@@ -23,7 +23,5 @@ namespace DMTools.Reflection
             });
             return (TReturn)Activator.CreateInstance(typeof(TReturn), param);
         }
-
-        
     }
 }

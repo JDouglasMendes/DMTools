@@ -12,19 +12,31 @@ namespace DMTools.Test.Reflection
         public void CreateExpressionTest()
         {
             var ex = new System.Exception("MessageTest");
-            var instance = new Instance();
-            ExceptionTest result = instance.Create<ExceptionTest, System.Exception>(ex, c => c.Message);
+            ExceptionTest result = Instance.Create<ExceptionTest, System.Exception>(ex, c => c.Message);
             Assert.NotNull(result);
             Assert.Equal("MessageTest", result.Message);
-           
-        }
-    }
 
-    public class ExceptionTest : System.Exception
-    {
-        public ExceptionTest(string msg): base(msg)
+        }
+
+        [Fact]
+        public void CreateTest()
         {
+            var ex = Instance.Create<ExceptionTest>();
+            Assert.NotNull(ex);
+            Assert.IsType<ExceptionTest>(ex);
+
+        }
+
+        public class ExceptionTest : System.Exception
+        {
+            public ExceptionTest()
+            {
+
+            }
+            public ExceptionTest(string msg) : base(msg)
+            {
+            }
         }
     }
 
-}
+    }

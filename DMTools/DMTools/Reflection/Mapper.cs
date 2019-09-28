@@ -10,8 +10,8 @@ namespace DMTools.Reflection
     {
         public TDestiny To<TEntry,TDestiny>(TEntry entry)
         {
-            var instanceReturn = new Instance();
-            var destiny = instanceReturn.Create<TDestiny>();
+    
+            var destiny = Instance.Create<TDestiny>();
 
             var properties = entry.GetType().GetProperties().ToList();
             properties.ForEach(x =>

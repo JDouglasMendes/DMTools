@@ -5,6 +5,7 @@
 [![GitHub](https://img.shields.io/github/license/JDouglasMendes/DMTools)](https://github.com/JDouglasMendes/DMTools/blob/master/LICENSE)
 [![Nuget](https://img.shields.io/nuget/v/DMTools)](https://www.nuget.org/packages/DMTools)
 [![codecov](https://codecov.io/gh/JDouglasMendes/DMTools/branch/master/graph/badge.svg)](https://codecov.io/gh/JDouglasMendes/DMTools)
+[![GitHub issues](https://img.shields.io/github/issues/JDouglasMendes/DMTools)](https://huboard.com/JDouglasMendes/DMTools)
 
 ## Instalação
 *Install-Package DMTools* || *dotnet add package DMTools*

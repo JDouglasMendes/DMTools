@@ -6,9 +6,11 @@ namespace DMTools.Utils
 {
     public static class Util
     {
-        public static bool IsNull(this object instancce)
+        public static bool IsNull(this object instance)
         {
-            return instancce == null;
+            return instance == null;
         }
+
+        public static bool IsValueDefault<T>(this T value) where T : struct => default(T).Equals(value);
     }
 }

@@ -17,7 +17,7 @@ namespace DMTools.Test.Reflection
             Assert.Equal("MessageTest", result.Message);
 
         }
-
+        
         [Fact]
         public void CreateTest()
         {
